@@ -1,7 +1,8 @@
+export const runtime = "nodejs";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
 
 // Получить все заметки
 export async function GET() {
