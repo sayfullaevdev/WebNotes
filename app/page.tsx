@@ -76,8 +76,9 @@ export default function HomePage() {
           >
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                <Zap className="w-4 h-4" />
-                Modern Note-taking
+                <Zap className="w-4 h-4 uppercase" />
+
+                DESIGN BY ABDU
               </div>
 
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
@@ -211,49 +212,22 @@ export default function HomePage() {
 
             {/* Статистика */}
             <div className="grid grid-cols-3 gap-4 mt-8">
-              <div className="text-center p-4 rounded-xl bg-gradient-to-b from-background to-primary/5 border border-primary/10">
-                <div className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">10K+</div>
+              <div className="text-center p-4 rounded-xl bg-linear-to-b from-background to-primary/5 border border-primary/10">
+                <div className="text-2xl font-bold bg-linear-to-r from-primary to-purple-600 bg-clip-text text-transparent">10K+</div>
                 <div className="text-sm text-muted-foreground">Active Users</div>
               </div>
-              <div className="text-center p-4 rounded-xl bg-gradient-to-b from-background to-purple-500/5 border border-purple-500/10">
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent">50K+</div>
+              <div className="text-center p-4 rounded-xl bg-linear-to-b from-background to-purple-500/5 border border-purple-500/10">
+                <div className="text-2xl font-bold bg-linear-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent">50K+</div>
                 <div className="text-sm text-muted-foreground">Notes Created</div>
               </div>
-              <div className="text-center p-4 rounded-xl bg-gradient-to-b from-background to-blue-500/5 border border-blue-500/10">
-                <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent">99.9%</div>
+              <div className="text-center p-4 rounded-xl bg-linear-to-b from-background to-blue-500/5 border border-blue-500/10">
+                <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent">99.9%</div>
                 <div className="text-sm text-muted-foreground">Uptime</div>
               </div>
             </div>
           </motion.div>
         </div>
       </main>
-
-      {/* Футер */}
-      <footer className="container mx-auto px-6 py-8 border-t border-primary/10 mt-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-3">
-            <Brain className="w-6 h-6 text-primary" />
-            <span className="font-semibold">MindNotes</span>
-          </div>
-
-          <div className="text-sm text-muted-foreground text-center">
-            <p>© {new Date().getFullYear()} MindNotes. All thoughts are private.</p>
-            <p className="text-xs mt-1">Built with Next.js • TypeScript • Tailwind CSS</p>
-          </div>
-
-          <div className="flex gap-4">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-              Privacy
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-              Terms
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-              Contact
-            </Button>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

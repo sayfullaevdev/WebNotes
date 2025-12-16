@@ -13,14 +13,14 @@ interface EmptyStateProps {
 
 export default function EmptyState({ message, buttonText, onButtonClick }: EmptyStateProps) {
   return (
-    <div className="flex items-center justify-center h-full min-h-[500px]">
+    <div className="flex items-center justify-center h-full min-h-125">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         className="text-center p-8 max-w-md"
       >
         <div className="relative mb-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 blur-xl rounded-full" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/20 to-purple-500/20 blur-xl rounded-full" />
           <div className="relative bg-gradient-to-br from-background to-primary/5 border border-primary/10 rounded-2xl p-8 backdrop-blur-sm">
             <PenTool className="w-16 h-16 mx-auto text-primary mb-4" />
             <Sparkles className="absolute -top-2 -right-2 w-8 h-8 text-yellow-500" />
